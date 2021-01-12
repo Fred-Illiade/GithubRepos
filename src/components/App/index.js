@@ -7,10 +7,17 @@ import data from '../../data';
 
 // == Composant
 
+const navList = data.items.map((dataObject) => ({
+  name: dataObject.name,
+  login: dataObject.owner.login,
+  avatar: dataObject.owner.avatar_url,
+
+}));
+
 const App = () => {
   return (
     <div className="app">
-    <Repos liste={data.items} />
+    <Repos liste={navList} />
   </div>
   );
 };

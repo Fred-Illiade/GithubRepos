@@ -5,11 +5,16 @@ import PropTypes from 'prop-types';
 // == Composant
 
 const Repos = ({ liste }) => {
- 
+ console.log(liste);
   return (
       liste.map((results) => {
         return (
-          <div>{results.name}</div>
+          <div>
+          <div>{results.name}</div>  
+          <div>{results.login}</div>  
+          <img className="card-image" alt="illustration" src={results.avatar} />
+         
+          </div>
         );
       })
 
