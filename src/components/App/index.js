@@ -2,18 +2,19 @@
 import React from 'react';
 
 // == Import
-import Counter from 'src/containers/Counter';
-import reactLogo from './react-logo.svg';
-import './styles.css';
+import Repos from 'src/components/Repos';
+import data from '../../data';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-    <Counter />
+
+const App = () => {
+  return (
+    <div className="app">
+    <Repos liste={data.items} />
   </div>
-);
+  );
+};
+
 
 // == Export
 export default App;
