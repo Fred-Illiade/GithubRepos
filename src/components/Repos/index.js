@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 // == Composant
 
-const Repos = ({ liste }) => {
- console.log(liste);
+const Repos = ({ list }) => {
+ console.log(list);
   return (
-      liste.map((results) => {
+      list.map((results) => {
         return (
           <div>
           <div>{results.name}</div>  
