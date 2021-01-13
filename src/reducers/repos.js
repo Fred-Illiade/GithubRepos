@@ -1,11 +1,16 @@
-import data from '../data';
+import { FETCH_REPOS_SUCCESS } from '../actions/repos';
 
 const initialState = {
-  list: data.items,
+  list: [],
 };
 
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
+    case FETCH_REPOS_SUCCESS:
+      return {
+        ...state,
+        list: [...action.payload],
+      };
     default:
       return state;
 }
