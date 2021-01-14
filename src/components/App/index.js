@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 
 // == Import
 import Repos from 'src/containers/Repos';
-import SearchBar from 'src/components/SearchBar';
+import SearchBar from 'src/containers/SearchBar';
 import data from '../../data';
 
 
@@ -14,16 +14,7 @@ const App = ({fetchRepos}) => {
   return (
     <div className="app">
     <Repos />
-    <SearchBar 
-    changeField={() => {
-      console.log('changeField');
-   
-    }}
-    onSearchSubmit={() => {
-      console.log('onSearchSubmit');
-   
-    }}
-    />
+    <SearchBar />
   </div>
   );
 };
