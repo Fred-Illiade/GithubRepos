@@ -1,7 +1,7 @@
 import { FILTER_SUBMIT} from '../actions/filter';
 
 const initialState = {
-  languagelist: 'javascript',
+  languagelist: '',
 };
 
 const filter = (state = initialState, action = {}) => {

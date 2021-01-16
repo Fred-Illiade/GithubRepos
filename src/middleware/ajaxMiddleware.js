@@ -55,7 +55,7 @@ export default (store) => (next) => (action) => {
               case FILTER_SUBMIT:
             axios({
               method: 'get',
-              url: `https://api.github.com/search/repositories?q=${state.searchBar.searchText}+${state.filter.languagelist}?page=${state.navigation.page}&per_page=${state.navigation.perpage}`,
+              url: `https://api.github.com/search/repositories?q=${state.searchBar.searchText}+language:${state.filter.languagelist}`,
             })
               .then((res) => {
                 const { data } = res;
