@@ -17,9 +17,17 @@ const reducer = (state = initialState, action = {}) => {
 };
 
 export const navList = (listerepos) => listerepos.map((dataObject) => ({
-  name: dataObject.name,
-  login: dataObject.owner.login,
+  name: dataObject.full_name,
+  language: dataObject.language,
   avatar: dataObject.owner.avatar_url,
+  stars: dataObject.stargazers_count,
+
+}));
+
+export const navLanguageList = (listerepos) => listerepos.map((dataObject) => ({
+
+  language: dataObject.language,
+
 
 }));
 
