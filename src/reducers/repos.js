@@ -2,7 +2,6 @@ import { FETCH_REPOS_SUCCESS } from '../actions/repos';
 
 const initialState = {
   list: [],
-  searchText: 'react',
 };
 
 const reducer = (state = initialState, action = {}) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SearchBar = ({
-changeField,onSearchSubmit,
+changeField,onSearchSubmit,value,
 }) => (
 <form onSubmit={(e)=> {
 e.preventDefault();
@@ -9,6 +9,7 @@ onSearchSubmit();
 }}
 >
   <input
+  value={value}
   onChange={(e) => {
     changeField(e.target.value);
   }}
