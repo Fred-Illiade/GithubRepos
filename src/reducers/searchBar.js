@@ -1,7 +1,7 @@
 import { INPUT_CHANGE, INPUT_SUBMIT} from '../actions/input';
 
 const initialState = {
-  searchText: 'react',
+  searchText: '',
 };
 
 const SearchBar = (state = initialState, action = {}) => {

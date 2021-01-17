@@ -1,4 +1,4 @@
-import { FILTER_SUBMIT} from '../actions/filter';
+import { FILTER_SUBMIT } from '../actions/filter';
 
 const initialState = {
   languagelist: '',

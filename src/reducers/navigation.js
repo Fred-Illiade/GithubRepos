@@ -1,8 +1,8 @@
-import { NAVIGATION_SUBMIT} from '../actions/navigation';
+import { NAVIGATION_SUBMIT } from '../actions/navigation';
 
 const initialState = {
   page: 1,
-  perpage: 30,
+  perpage: 10,
 };
 
 const navigation = (state = initialState, action = {}) => {

@@ -7,6 +7,6 @@ import filter from './filter';
 export default combineReducers({
   repos,
   searchBar,
-navigation,
-filter,
+  navigation,
+  filter,
 });

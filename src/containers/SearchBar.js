@@ -2,9 +2,10 @@
 import {connect} from 'react-redux';
 import SearchBar from '../components/SearchBar';
 import {InputChange, InputSubmit} from '../actions/input';
+import {fetchRepos} from '../actions/repos';
 
 const mapState = (state) => ({
-  searchText: state.repos.searchText,
+  searchText: state.searchBar.searchText,
 });
 
 const mapDispatch = (dispatch) => ({
@@ -16,6 +17,7 @@ const mapDispatch = (dispatch) => ({
   },
   onSearchSubmit: () => {
     dispatch(InputSubmit());
+    dispatch(fetchRepos());
   },
 
 });

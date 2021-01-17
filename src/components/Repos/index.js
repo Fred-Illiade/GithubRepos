@@ -14,7 +14,6 @@ const Repos = ({ list }) => {
           <div>{results.name}</div>  
           <div>{results.language}</div>  
           <div>{results.stars}</div>  
-          <img className="card-image" alt="illustration" src={results.avatar} />
          
           </div>
         );
